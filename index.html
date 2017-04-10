@@ -13,8 +13,12 @@
 
 
 <body>
+
+	<!--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+	            HEADER
+	#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--->   
 	
-    <header>
+    <header id="home">
 		<nav class="nav navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
@@ -29,7 +33,7 @@
 				
 				<div class="collapse navbar-collapse" id="collapse-menu">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Home</a></li>
+						<li><a href="#home">Home</a></li>
 						<li><a href="#onas">O nas</a></li>
 						<li><a href="#portfolio">Portfolio</a></li>
 						<li><a href="#oferta">Oferta</a></li>
@@ -37,12 +41,33 @@
 						<li><a href="#kontakt">Kontakt</a></li>
 					</ul>	<!--menu list-->				
 				</div><!--navbar-collapse-->
-	
-				
 			</div><!--container-->
 		</nav><!--nav-->
+		
+		<div class="carousel slide">
+		    <div class="carousel-inner fullheight">
+                <div class="item active">
+		            <img src="images/slider-bedroom-1920.jpg" alt="Slider bedroom">
+		        </div><!--item-->
+		        <div class="item ">
+		            <img src="images/slider-kitchen-1920.jpg" alt="Slider kitchen">
+		        </div><!--item-->
+		        <div class="item ">
+		            <img src="images/slider-bathroom-1920.jpg" alt="Slider bathroom">
+		        </div><!--item-->
+		    </div><!--carousel-inner -->   
+		</div><!--carousel-->
 	</header>
 	
+	<!--#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+	            SECTION O NAS
+	#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#--->
+	
+	<section class="onas" id="onas">
+	    <div class="container">
+	        <h1>O nas</h1>
+	    </div><!--container-fluid-->
+	</section><!--o nas-->
 	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
