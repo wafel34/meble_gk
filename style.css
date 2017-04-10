@@ -14,4 +14,27 @@ COLOR PALETTE:
 
 body {
     position: relative;
+	font-size: 16px;
+}
+header .navbar-default {
+	background: transparent;
+	border: none;
+}
+
+header .navbar-brand {
+	background: url(images/meblegk-logo.png) no-repeat center center;
+	height: 80px;
+	background-size: contain;
+	width: 100px;
+	padding: 0;
+	margin: 10px 0;
+}
+
+header ul.nav {
+	font-family: 'Bree Serif';
+	font-size: 1.4em;
+}
+header ul.nav li {
+	display: inline-block;
+	padding: 30px 5px;
 }
