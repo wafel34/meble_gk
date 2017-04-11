@@ -1,12 +1,15 @@
-$(function(){
+$(function () {
+    'use strict';
     //variables
-    var imgQty = $('.carousel .item').length;
-	var random = Math.floor(Math.random()*3);
+    var imgQty = $('.carousel .item').length,
+        random = Math.floor(Math.random() * 3),
+        i = 0,
+        htmlIndicator = '';
     //Changing the carousel image to background image
     
-    $('.carousel .item img').each(function(){
+    $('.carousel .item img').each(function () {
         var imgSrc = $(this).attr('src');
-        $(this).parent().css({'background-image': 'url('+imgSrc+')'});
+        $(this).parent().css({'background-image': 'url(' + imgSrc + ')'});
         $(this).remove();
     });
     
@@ -20,12 +23,11 @@ $(function(){
 	//carousel indicators
 	
 	$('.carousel .item').eq(random).addClass('active');
-	for (var i = 0; i < imgQty; i++) {
-		var htmlIndicator ='';
+	for (i = 0; i < imgQty; i++) {
 		if (i === random) {
-			htmlIndicator = '<li data-target="#carousel-id" class="active" data-slide-to="'+i+'"></li>';
+			htmlIndicator = '<li data-target="#carousel-id" class="active" data-slide-to="' + i + '"></li>';
 		} else {
-			htmlIndicator = '<li data-target="#carousel-id" data-slide-to="'+i+'"></li>';
+			htmlIndicator = '<li data-target="#carousel-id" data-slide-to="' + i + '"></li>';
 		}
 		$('.carousel-indicators').append(htmlIndicator);
 	}
