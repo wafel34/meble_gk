@@ -10,12 +10,12 @@ COLOR PALETTE:
 
 */
 
-@import url('https://fonts.googleapis.com/css?family=Arimo:400,700|Bree+Serif&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700,900|Bree+Serif&subset=latin-ext');
 
 body {
     position: relative;
 	font-size: 16px;
-    font-family: Arimo;
+    font-family: 'Titillium Web';
     font-weight: 400;
 }
 
@@ -45,17 +45,19 @@ header ul.nav {
 
 header ul.nav li {
 	display: inline-block;
-	padding: 30px 5px;
+	padding: 25px 5px;
 }
 
 header .navbar-default .navbar-nav>li>a {
     color: #FBE8A6;
     box-sizing: border-box;
     height: 50px;
+	transition: all .3s ease-in-out;
 }
 
 header .navbar-default .navbar-nav>li>a:hover {
-    color: #F4976C;    
+    color: #F4976C;
+	transform: translate(0px,-5px);
 }
 header .navbar-default .navbar-nav>li>a:active,
 header .navbar-default .navbar-nav>li>a:focus {
@@ -162,12 +164,13 @@ header .carousel .carousel-inner .item {
 
 section.onas {
     border-top: 10px solid #F4976C;
+	background-image: linear-gradient(to bottom, #FFF, #EDE);
 }
 
 section.onas h1 {
     text-align: center;
     font-weight: 700;
-    margin-bottom: 35px;
+    margin: 50px;
     color: #303C6C;
 }
 
@@ -175,11 +178,39 @@ section.onas h2 {
     color: #303C6C;
 }
 
+section.onas span {
+	font-weight: 600;
+}
+
 section.onas span.glyphicon {
-    font-size: 2em;
+    font-size: 2.6em;
     color: #F4976C;
     margin-top:  15px;
+	background-color: #B4DFE5;
+	padding: 20px;
+	border-radius: 100%;
 }
+
+.grzegorz_kudas {
+	margin-top: 50px;
+}
+
+.grzegorz_kudas img {
+	border: 3px solid #F4976C;
+	padding: 2px;
+	margin: 8px auto;
+}
+
+.grzegorz_kudas blockquote {
+	border-left: 2px solid #F4976C;
+}
+
+.grzegorz_kudas blockquote footer {
+	color: #303C6C;
+	font-weight: 600;
+	font-size: 1em;
+}
+
 
 /**************************
        MEDIA QUERIES
@@ -200,7 +231,8 @@ section.onas span.glyphicon {
     } 
 	
 	header .navbar-default .navbar-nav>li>a:hover {
-		background-color: rgba(0,0,0,.5);    
+		background-color: rgba(0,0,0,.5); 
+		transform: translate(0px,0px);		
 	}
 }
 
@@ -211,6 +243,11 @@ section.onas span.glyphicon {
     }  
 }
 
+@media only screen and (min-width: 550px) and (max-width: 768px) {
+	section.onas .col-sm-4 {
+		padding: 0 20%;
+	}
+}
 
 @media only screen and (max-width: 320px) {
     .carousel-caption h1 {
