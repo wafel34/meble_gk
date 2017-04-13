@@ -164,6 +164,7 @@ header .carousel .carousel-inner .item {
 
 .carousel-caption h1 {
 	padding: 20px;
+	margin: 0;
 	border: 4px solid white;
 	opacity: .9;
     font-weight: 700;
