@@ -267,7 +267,7 @@ section.oferta ul li {
        MEDIA QUERIES
 **************************/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 	header .navbar-collapse.collapse.in {
 		padding: 0;
 	}
@@ -294,7 +294,7 @@ section.oferta ul li {
     }  
 }
 
-@media only screen and (min-width: 550px) and (max-width: 768px) {
+@media only screen and (min-width: 550px) and (max-width: 767px) {
 	section.onas .col-sm-4 {
 		padding: 0 20%;
 	}
