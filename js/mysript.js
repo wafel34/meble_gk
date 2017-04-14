@@ -31,5 +31,17 @@ $(function () {
 		}
 		$('.carousel-indicators').append(htmlIndicator);
 	}
+    
+    //Gallery thumbnails
+    
+    $('.tab-pane a').each(function () {
+		var imageSrc = $(this).attr('href');
+		imageSrc = imageSrc.split('.');
+		imageSrc[0] = imageSrc[0] + '_t';
+		imageSrc = imageSrc.join('.');
+		
+		$(this).append('<img src="' + imageSrc + '" class="thumbnail img-responsive center-block" alt="Kuchnia">');
+    });
+    
 	
 });
