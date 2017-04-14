@@ -262,6 +262,45 @@ section.oferta ul li {
 }
 
 
+/**************************
+       SECTION: PORTFOLIO
+**************************/
+
+section.portfolio {
+    min-height: 400px;
+    background-image: linear-gradient(to top, #FDEAC6, #FAD88D);
+}
+
+.nav-pills {
+    text-align: center;
+}
+
+.nav-pills>li {
+    display: inline-block;
+    float: none;
+}
+
+.nav-pills>li>a {
+    border-radius: 30px;
+    padding: 10px 30px;
+    color: #303C6C;
+    border: 2px solid #303C6C;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+    box-shadow: 0px 17px 10px -10px rgba(0,0,0,.4);
+}
+.nav-pills>li>a:hover, .nav-pills>li>a:focus {
+    background-color: #F4976C;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,.2);
+} 
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    font-weight: 700;
+    box-shadow: 0px 0px 2px -3px black;
+    box-shadow: 0px 37px 10px -15px rgba(0,0,0,.2);
+}
+
+
 
 /**************************
        MEDIA QUERIES
@@ -287,18 +326,29 @@ section.oferta ul li {
 	}
 }
 
+@media only screen and (min-width: 550px) and (max-width: 767px) {
+	section.onas .col-sm-4 {
+		padding: 0 20%;
+	}
+    section.oferta .col-sm-4 {
+		padding-left: 25%;
+	}
+}
+
 
 @media only screen and (max-width: 550px) {
     .carousel-caption h1 {
         font-size: 1.6em;
     }  
+    
+    section.oferta .col-sm-4 {
+		text-align: center;
+	}
+    section.oferta ul {
+        border-left: none;
+    }
 }
 
-@media only screen and (min-width: 550px) and (max-width: 767px) {
-	section.onas .col-sm-4 {
-		padding: 0 20%;
-	}
-}
 
 @media only screen and (max-width: 320px) {
     .carousel-caption h1 {
