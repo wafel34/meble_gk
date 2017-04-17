@@ -487,6 +487,10 @@ footer.footer .modal-body p {
         padding: 0;
         text-align: center;
     } 
+    
+    header .navbar-collapse {
+        border: none;
+    }
     header .navbar-default .navbar-nav>li>a {
         background-color: #303C6C;
     }
@@ -499,6 +503,14 @@ footer.footer .modal-body p {
     
     header .navbar-default .navbar-nav>li.active>a {
         background-color: #303C6C;
+    }
+    
+    header .navbar-default .navbar-nav>li.active>a:hover, header .navbar-default .navbar-nav>li.active>a:focus {
+        background-color: #000;
+    }
+    
+    footer.footer {
+        padding: 25px 10px;
     }
 }
 
@@ -522,6 +534,15 @@ footer.footer .modal-body p {
 	}
     section.oferta ul {
         border-left: none;
+    }
+    
+    section.contact .content {
+        font-size: 1.2em;
+    }
+    
+    footer.footer {
+        padding: 25px 0px;
+        font-size: .8em;
     }
 }
 

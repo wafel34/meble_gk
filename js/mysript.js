@@ -7,7 +7,7 @@ $(function () {
         i = 0,
         htmlIndicator = '',
         hash = '',
-        target = "";
+        target = null;
 
     
     //Changing the carousel image to background image
@@ -79,13 +79,14 @@ $(function () {
     
     
     //smoothscrolling
-    $('nav ul li a').click(function () {
+    $('nav a').click(function () {
        target = $(this).attr('href');
        target = $(target).offset().top;
 
         $('html,body').animate({
           scrollTop: target - 50
         }, 'slow');
+        return false;
     });
     	
 		
