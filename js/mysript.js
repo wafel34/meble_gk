@@ -1,10 +1,15 @@
 $(function () {
     'use strict';
+    
     //variables
     var imgQty = $('.carousel .item').length,
         random = Math.floor(Math.random() * 3),
         i = 0,
-        htmlIndicator = '';
+        htmlIndicator = '',
+        hash = '',
+        target = "";
+
+    
     //Changing the carousel image to background image
     
     $('.carousel .item img').each(function () {
@@ -43,5 +48,47 @@ $(function () {
 		$(this).append('<img src="' + imageSrc + '" class="thumbnail img-responsive center-block" alt="Kuchnia">');
     });
     
-	
+    //Scrollspy
+    
+    $('body').scrollspy({
+        target: '.navbar-default',
+        offset: 75
+    });
+    
+    //Adding inbody class to navigation
+    
+        //If page refreshed etc.
+    
+    hash = $(this).find('nav ul').find('li.active a').attr('href');
+    if (hash !== "#home") {
+        $('header nav').addClass('inbody');
+	} else {
+		$('header nav').removeClass('inbody');
+	}
+
+        //If page scrolled
+    
+    $('.navbar-fixed-top').on('activate.bs.scrollspy', function () {
+	    var hash = $(this).find('li.active a').attr('href');
+		if (hash !== "#home") {
+            $('header nav').addClass('inbody');
+		} else {
+			$('header nav').removeClass('inbody');
+		}
+	});
+    
+    
+    //smoothscrolling
+    $('nav ul li a').click(function () {
+       target = $(this).attr('href');
+       target = $(target).offset().top;
+
+        $('html,body').animate({
+          scrollTop: target - 50
+        }, 'slow');
+    });
+    	
+		
+    
+    
 });

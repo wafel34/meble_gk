@@ -42,6 +42,8 @@ h2 {
 header .navbar-default {
 	background: rgba(0,0,0,.25);
 	border: none;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 header .navbar-brand {
@@ -51,6 +53,8 @@ header .navbar-brand {
 	width: 100px;
 	padding: 0;
 	margin: 10px 0;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 header ul.nav {
@@ -61,14 +65,23 @@ header ul.nav {
 header ul.nav li {
 	display: inline-block;
 	padding: 25px 5px;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background: none;
+    color: #EAC67A; 
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-bottom: 4px solid #EAC67A;
 }
 
 header .navbar-default .navbar-nav>li>a {
     color: #FBE8A6;
     box-sizing: border-box;
     height: 50px;
-	-webkit-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 header .navbar-default .navbar-nav>li>a:hover {
@@ -85,6 +98,27 @@ header .navbar-default .navbar-nav>li>a:focus {
 }
 
 
+/**************************
+       NAVBAR + .inbody
+**************************/
+
+header .inbody {
+    background: #303C6C;
+    height: 50px;
+}
+
+header .inbody .navbar-brand  {
+    height: 40px;
+    margin: 5px;
+}
+
+header .inbody ul li {
+    padding: 0;
+}
+
+header .inbody .navbar-toggle {
+    margin-top: 7px;
+}
 /**************************
        NAVBAR TOGGLE
 **************************/
@@ -236,7 +270,6 @@ section.onas span.glyphicon {
 	color: #303C6C;
 	font-weight: 600;
 	font-size: 1em;
-    border-right: none;
 }
 
 
@@ -360,8 +393,6 @@ section.faq .panel-title>a{
     display: block;
 }
 
-
-
 section.faq .panel-body {
     background: rgba(255,255,255,.9);
     margin-bottom: 15px;
@@ -418,6 +449,26 @@ iframe {
     margin: 75px auto 0 auto;
 }
 
+/**************************
+       FOOTER
+**************************/
+
+footer.footer {
+    padding: 50px;
+    font-weight: 600;
+    color: #303C6C;
+    border-top: 10px solid #303C6C;
+    background: #FBE8A6;
+}
+
+footer.footer a {
+    color: #303C6C;
+}
+
+footer.footer .modal-body p {
+    font-weight: 400;
+}
+
 
 /**************************
        MEDIA QUERIES
@@ -436,12 +487,19 @@ iframe {
         padding: 0;
         text-align: center;
     } 
+    header .navbar-default .navbar-nav>li>a {
+        background-color: #303C6C;
+    }
 	
 	header .navbar-default .navbar-nav>li>a:hover {
-		background-color: rgba(0,0,0,.5); 
+		background-color: rgba(0,0,0,1); 
 		-webkit-transform: translate(0px,0px); 
 		transform: translate(0px,0px);		
 	}
+    
+    header .navbar-default .navbar-nav>li.active>a {
+        background-color: #303C6C;
+    }
 }
 
 @media only screen and (min-width: 550px) and (max-width: 767px) {
