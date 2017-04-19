@@ -107,5 +107,11 @@ $(function () {
         }, 'slow');
         return false;
     });
+	
+	
+	//hide navbar-collaspe
+	$('.navbar-default a').click(function (){
+		$('.navbar-collapse').removeClass('in');
+	});
 			
 });
