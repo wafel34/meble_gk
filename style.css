@@ -73,7 +73,7 @@ header ul.nav li {
     color: #EAC67A; 
     font-weight: 700;
     letter-spacing: 1px;
-    border-bottom: 4px solid #EAC67A;
+    border-bottom: 4px solid #EAC67A;	
 }
 
 header .navbar-default .navbar-nav>li>a {
@@ -94,7 +94,6 @@ header .navbar-default .navbar-nav>li>a:focus {
     color: #EAC67A; 
     font-weight: 700;
     letter-spacing: 1px;
-    border-bottom: 4px solid #EAC67A;
 }
 
 
@@ -477,6 +476,7 @@ footer.footer .modal-body p {
 @media only screen and (max-width: 767px) {
 	header .navbar-collapse.collapse.in {
 		padding: 0;
+		overflow-y: visible;
 	}
     header ul.nav {
 		margin: 0;
@@ -485,6 +485,7 @@ footer.footer .modal-body p {
 	header ul.nav li {
         display: block;
         padding: 0;
+		margin: -1px 0;
         text-align: center;
     } 
     
@@ -495,18 +496,17 @@ footer.footer .modal-body p {
         background-color: #303C6C;
     }
 	
-	header .navbar-default .navbar-nav>li>a:hover {
-		background-color: rgba(0,0,0,1); 
+	header .navbar-default .navbar-nav>li>a:hover,
+	header .navbar-default .navbar-nav>li>a:focus {
+		background-color: #303C6C;
 		-webkit-transform: translate(0px,0px); 
 		transform: translate(0px,0px);		
 	}
     
-    header .navbar-default .navbar-nav>li.active>a {
+    header .navbar-default .navbar-nav>li.active>a,
+	header .navbar-default .navbar-nav>li.active>a:hover,
+	header .navbar-default .navbar-nav>li.active>a:focus	{
         background-color: #303C6C;
-    }
-    
-    header .navbar-default .navbar-nav>li.active>a:hover, header .navbar-default .navbar-nav>li.active>a:focus {
-        background-color: #000;
     }
     
     footer.footer {
@@ -532,6 +532,7 @@ footer.footer .modal-body p {
     section.oferta .col-sm-4 {
 		text-align: center;
 	}
+	
     section.oferta ul {
         border-left: none;
     }

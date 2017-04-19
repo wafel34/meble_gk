@@ -7,7 +7,8 @@ $(function () {
         i = 0,
         htmlIndicator = '',
         hash = '',
-        target = null;
+        target = null,
+		windowWidth = window.innerWidth;
 
     
     //Changing the carousel image to background image
@@ -22,7 +23,7 @@ $(function () {
     
     $('.carousel').carousel({
         pause: null,
-        interval: false
+        interval: '5000'
     });
 	
 	//carousel indicators
@@ -60,7 +61,9 @@ $(function () {
         //If page refreshed etc.
     
     hash = $(this).find('nav ul').find('li.active a').attr('href');
-    if (hash !== "#home") {
+    if (windowWidth < 768) {
+		$('header nav').addClass('inbody');
+	} else if (hash !== "#home") {
         $('header nav').addClass('inbody');
 	} else {
 		$('header nav').removeClass('inbody');
@@ -70,13 +73,29 @@ $(function () {
     
     $('.navbar-fixed-top').on('activate.bs.scrollspy', function () {
 	    var hash = $(this).find('li.active a').attr('href');
-		if (hash !== "#home") {
+		if (windowWidth < 768) {
+			$('header nav').addClass('inbody');
+		} else if (hash !== "#home") {
             $('header nav').addClass('inbody');
 		} else {
 			$('header nav').removeClass('inbody');
 		}
 	});
-    
+	    
+		//If page resized
+		
+	$(window).resize(function (){
+		windowWidth = window.innerWidth;
+		if (windowWidth < 768) {
+			$('header nav').addClass('inbody');
+		} else if (windowWidth < 768) {
+			$('header nav').removeClass('inbody');
+		} else if (hash !== "#home") {
+            $('header nav').addClass('inbody');
+		} else {
+			$('header nav').removeClass('inbody');
+		}
+	});
     
     //smoothscrolling
     $('nav a').click(function () {
@@ -88,8 +107,5 @@ $(function () {
         }, 'slow');
         return false;
     });
-    	
-		
-    
-    
+			
 });
