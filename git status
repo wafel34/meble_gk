@@ -1,0 +1,137 @@
+[33mcommit ab3658cf9ba83d2dfd47bdf73e728d432a046b0a[m
+Author: Pawel.Marcinkowski <wafel34@gmail.com>
+Date:   Wed Apr 19 23:28:28 2017 +0100
+
+    htaccess
+
+[33mcommit a21e6f4f5cdbc64406951744c6e2ba7ee958277e[m
+Author: Pawel <wafel34@gmail.com>
+Date:   Wed Apr 19 13:56:28 2017 +0100
+
+    IE=edge
+
+[33mcommit 1248148b5a4be1dc807bba6e159c9948ed790d55[m
+Author: Pawel <wafel34@gmail.com>
+Date:   Wed Apr 19 13:52:59 2017 +0100
+
+    Hide navbar-collapse after on-click
+
+[33mcommit ba7e6216893ae8befc3ee7e2b7a746a56048fa17[m
+Author: Pawel <wafel34@gmail.com>
+Date:   Wed Apr 19 13:43:14 2017 +0100
+
+    Changed NAV styling (+inbody), turned on slider
+
+[33mcommit 5beab82759215632e8da5d278d75a17cbce50118[m
+Author: Pawel.Marcinkowski <wafel34@gmail.com>
+Date:   Tue Apr 18 18:54:53 2017 +0100
+
+    Fixing html problems
+
+[33mcommit 138dec1f64b7201e768de344143aa4b0988b8590[m
+Author: Pawel.Marcinkowski <wafel34@gmail.com>
+Date:   Mon Apr 17 17:08:36 2017 +0100
+
+    Finished layout v1
+
+[33mcommit 7e8ac0ca8f06a157be62e379d121233090588036[m
+Author: Pawel.Marcinkowski <wafel34@gmail.com>
+Date:   Mon Apr 17 11:17:05 2017 +0100
+
+    Finished footer, added Smoothscrolling in JS, started stylyzing nav .inbody
+
+[33mcommit 2e63170cd52869494e99cc405a775c03ecb597be[m
+Author: Pawel.Marcinkowski <wafel34@gmail.com>
+Date:   Sun Apr 16 11:34:02 2017 +0100
+
+    Finised FAQ, CONTACT, started footer+added modal in footer
+
+[33mcommit 5caa6bf5a070b8724fcd6eada00f54f9eccdcf3d[m
+Author: Pawel.Marcinkowski <wafel34@gmail.com>
+Date:   Fri Apr 14 14:54:45 2017 +0100
+
+    Removed lightbox images from repo
+
+[33mcommit 47bad13e572266783571c0148cfa54a849c29914[m
+Author: Pawel.Marcinkowski <wafel34@gmail.com>
+Date:   Fri Apr 14 14:44:31 2017 +0100
+
+    Finished portfolio, started FAQ, updated gitignore
+
+[33mcommit b3590c35959785690e7484e9ed1228ec912d6e5b[m
+Author: Pawel.Marcinkowski <wafel34@gmail.com>
+Date:   Fri Apr 14 11:03:32 2017 +0100
+
+    Adding lightbox, styling portfolio pills
+
+[33mcommit 0ae085ed07ddc78149ae97898468dd4b432bb48a[m
+Author: Pawel <wafel34@gmail.com>
+Date:   Thu Apr 13 16:18:49 2017 +0100
+
+    Fixing html comments
+
+[33mcommit d62e08f961bf30133562ff6698512bad867852db[m
+Author: Pawel <wafel34@gmail.com>
+Date:   Thu Apr 13 14:33:12 2017 +0100
+
+    Fixing padding at 768 breakpoint
+
+[33mcommit 68d353ac950c98962f62ce7b2614e9a535e328b5[m
+Author: Pawel <wafel34@gmail.com>
+Date:   Thu Apr 13 14:23:30 2017 +0100
+
+    Remove margin on carousel->h1
+
+[33mcommit 1576427fb068813792b7fde0ec770e7c61d4eca2[m
+Author: Pawel <wafel34@gmail.com>
+Date:   Thu Apr 13 13:34:32 2017 +0100
+
+    Skew section O NAS. Started section OFERTA
+
+[33mcommit 81c438fbd58c50e211f9c231eba563fce34799d3[m
+Author: Pawel <wafel34@gmail.com>
+Date:   Wed Apr 12 14:03:20 2017 +0100
+
+    Finished 'onas' section
+
+[33mcommit 6495731cb94e2f6339cb262326622d3dd5ce034b[m
+Author: Pawel.Marcinkowski <wafel34@gmail.com>
+Date:   Tue Apr 11 20:49:07 2017 +0100
+
+    added text for blockquote
+
+[33mcommit a138ef0287407435b37e98e61bf6168f7973c90d[m
+Author: Pawel.Marcinkowski <wafel34@gmail.com>
+Date:   Tue Apr 11 20:10:50 2017 +0100
+
+    Finished header in carousel + started section .onas
+
+[33mcommit f9ce2d632ca0de56749ea541a3940f8251c9e849[m
+Author: Pawel <wafel34@gmail.com>
+Date:   Tue Apr 11 14:01:30 2017 +0100
+
+    Carousel animation, carousel header, fixing navbar styles
+
+[33mcommit d8485f2920803d64809953497c0560e3569a7480[m
+Author: Pawel.Marcinkowski <wafel34@gmail.com>
+Date:   Mon Apr 10 20:42:37 2017 +0100
+
+    Stylizing navbar + adding a carousel (beginning).
+
+[33mcommit 6d5eb6390c8b8a1a0452de4fd3344bf0cbbf191f[m
+Author: Pawel <wafel34@gmail.com>
+Date:   Mon Apr 10 14:02:47 2017 +0100
+
+    Working on navbar and navbar collapsed
+
+[33mcommit ee8a3a9fa3d4ee96fde407f14837d257f025ed5a[m
+Author: Pawel.Marcinkowski <wafel34@gmail.com>
+Date:   Sat Apr 8 16:32:15 2017 +0100
+
+    Creating files, adding a font, basic changes.
+
+[33mcommit 30c84a2bc5c0ef565caab3f5fa1a2bfbe3216e0d[m
+Author: Pawel.Marcinkowski <wafel34@gmail.com>
+Date:   Sat Apr 8 13:11:27 2017 +0100
+
+    Initial commit
